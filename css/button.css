@@ -1,0 +1,152 @@
+.btn-primary {
+    color: #fff;
+    background-color: #6f7bd9;
+    border-color: #6f7bd9;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #555;
+    border-color: #555;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-default {
+    font-size: 14px;
+}
+
+.add-row,
+.delete-row {
+    height: 30px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.add-row,
+.delete-row {
+    height: 30px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+.add-row {
+    border: 1px solid #6f7bd9;
+    margin-right: 10px;
+    background: #6f7bd9;
+    color: #fff;
+}
+
+.add-row i,
+.delete-row i {
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+.add-row i {
+    color: #fff;
+}
+
+.delete-row i {
+    color: #fff;
+}
+
+.btn {
+    border-radius: 25px;
+    padding: 7px 20px;
+}
+
+.status-btn {
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 1.42876;
+    min-width: 32px;
+    overflow: hidden;
+    padding: 3px 10px;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.status-btn:hover{
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.in-progress {    
+    background-color: #0cba63;
+    color: #fff;
+}
+
+.btn-approve {
+    color: #fff;
+    background-color: #198754;
+
+}
+
+.btn-under-review {
+    color: #000;
+    background-color: #ffca2c;
+}
+
+.btn-rejected {
+    color: #fff;
+    background-color: #ff0000;
+}
+
+.created {
+    color: #fff;
+    background-color: #111dcd;
+}
+
+.sv-as-draft {
+    color: #fff;
+    background-color: #6c757d;
+}
+
+.approval-pending {
+    color: #Fff;
+    background-color: #2597ae;
+
+}
+
+.button-wrappr i{
+    padding-right: 7px;
+}
+
+.btn-default{
+    background: #198754;
+    color: #Fff;
+}
+
+.BottomBar .button-wrappr>a, .BottomBar .button-wrappr button{
+ background-color: unset;
+ border: 1px solid #6f7bd9;
+ border-radius: 4px;
+}
+
+.BottomBar .button-wrappr>a svg,
+.BottomBar .button-wrappr button svg
+{
+    font-size: 16px;
+    color: #6f7bd9;
+    width: 16px;
+    fill: #6f7bd9;
+    margin-right: 0;
+    
+}

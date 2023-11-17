@@ -1,0 +1,34 @@
+.range-wrap {
+  position: relative;
+  margin-bottom: 20px;
+}
+.range {
+  width: 100%;
+  
+}
+.bubble {
+  background: #6f7bd9;
+  color: #fff;
+  padding: 3px 8px;
+  position: absolute;
+  border-radius: 6px;
+  left: 50%;
+  font-size: 10px;
+  transform: translateX(-50%);
+  margin-top: 21px;
+}
+.bubble::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 8px;
+  background: #6f42c1;
+  top: -6px;
+  left: 47%;
+}
+
+
+
+
+
+

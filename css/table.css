@@ -1,0 +1,122 @@
+
+/*Finacel Impects*/
+
+.add-year {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.f-btn-secondary{
+    border: 1px solid #ff0000;
+    color: #ff0000;
+}
+
+.f-btn-secondary:hover{
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.financial-table .table{  
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+.financial-table .table>thead>tr>th{
+    /* background-color: #F2F2F2; */
+}
+
+.financial-table-header-year{
+    text-align: center;
+}
+
+.financial-table-cell{
+    display: flex;
+}
+
+.financial-table-cell>div{
+    width: 50%;
+    text-align: center;
+}
+
+
+.table{
+    font-size: 11px;
+    border: 1px solid #ddd;
+}
+
+.table>thead>tr>th{    
+    color: #fff;
+    font-weight: 500;
+    /* background: #dee2e6; */
+    border: 1px solid #ddd;
+    background-color: #6f7bd9;
+    vertical-align: middle;
+}
+
+.table>tbody>tr>td{
+    border: 1px solid #ddd;
+}
+
+#impacts-table .description .info-text p{
+ width: 200px;
+}
+
+
+
+.datatable-top, .datatable-bottom {
+    /* padding: 8px 10px; */
+}
+
+.datatable-wrapper.no-footer .datatable-container {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.datatable-top{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+   
+}
+
+.datatable-search{
+    position: relative;
+}
+
+.datatable-search svg{
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    width: 14px;
+}
+
+.datatable-top .datatable-filter button, .datatable-top .datatable-expoert button {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 6px 15px;
+    background-color: transparent;
+    font-size: 14px;
+    color: #555;
+}
+
+.datatable-top .datatable-filter button:hover, .datatable-top .datatable-expoert button:hover {
+    border: 1px solid #6f7bd9;
+    color: #6f7bd9;
+}
+
+.datatable-top .datatable-filter button:hover svg{
+    fill: #6f7bd9;
+}
+
+.datatable-filter svg, .datatable-expoert svg{
+    width: 14px;
+}
+
+.datatable-top .datatable-search input{
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 6px 15px;
+    background-color: #fff; 
+    height: 40px;
+}
