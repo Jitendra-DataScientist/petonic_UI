@@ -19,7 +19,9 @@
     text-decoration: unset;
   }
   
-
+.card{
+  border: 1px solid #e3e6ed;
+}
   
   .service-categories .service-card .card {
     transition: all 0.3s;

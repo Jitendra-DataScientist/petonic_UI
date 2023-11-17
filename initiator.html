@@ -31,6 +31,7 @@
     <link href="css/pagination.css" rel="stylesheet">
     <link rel="stylesheet" href="css/kursor.css">
     <link href="css/footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
 
 </head>
 
@@ -167,7 +168,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar top-global-nav mb-4 fixed-top shadow"
+                <nav class="navbar navbar-expand navbar-light bg-white topbar top-global-nav mb-4 fixed-top"
                     id="myHeader">
 
                     <!-- Sidebar Toggle (Topbar) -->
@@ -356,7 +357,7 @@
                                     <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                                 </a>
                                 <!-- Dropdown - User Information -->
-                                <div class="dropdown-menu dropdown-menu-right user-information shadow animated--grow-in"
+                                <div class="dropdown-menu dropdown-menu-right user-information animated--grow-in"
                                     aria-labelledby="userDropdown">
                                     <div class="arrow-up"></div>
 
@@ -391,39 +392,50 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-md-12">
                             <div class="BottomBar d-sm-flex align-items-center justify-content-end mb-4">
                                 <div class="button-wrappr">
                                     <a href="report.html" class="btn btn-secondary" title="view"><svg
                                             xmlns="http://www.w3.org/2000/svg" height="1em"
-                                            viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                            <path
+                                            viewBox="0 0 576 512">                                 <path
                                                 d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z" />
                                         </svg></a>
                                     <button class="btn btn-secondary" title="save- as draft"><svg
                                             xmlns="http://www.w3.org/2000/svg" height="1em"
-                                            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                            viewBox="0 0 512 512">
                                             <path
                                                 d="M441 58.9L453.1 71c9.4 9.4 9.4 24.6 0 33.9L424 134.1 377.9 88 407 58.9c9.4-9.4 24.6-9.4 33.9 0zM209.8 256.2L344 121.9 390.1 168 255.8 302.2c-2.9 2.9-6.5 5-10.4 6.1l-58.5 16.7 16.7-58.5c1.1-3.9 3.2-7.5 6.1-10.4zM373.1 25L175.8 222.2c-8.7 8.7-15 19.4-18.3 31.1l-28.6 100c-2.4 8.4-.1 17.4 6.1 23.6s15.2 8.5 23.6 6.1l100-28.6c11.8-3.4 22.5-9.7 31.1-18.3L487 138.9c28.1-28.1 28.1-73.7 0-101.8L474.9 25C446.8-3.1 401.2-3.1 373.1 25zM88 64C39.4 64 0 103.4 0 152V424c0 48.6 39.4 88 88 88H360c48.6 0 88-39.4 88-88V312c0-13.3-10.7-24-24-24s-24 10.7-24 24V424c0 22.1-17.9 40-40 40H88c-22.1 0-40-17.9-40-40V152c0-22.1 17.9-40 40-40H200c13.3 0 24-10.7 24-24s-10.7-24-24-24H88z" />
                                         </svg>
                                     </button>
                                     <button class="btn btn-primary" title="save"><svg xmlns="http://www.w3.org/2000/svg"
                                             height="1em"
-                                            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                            viewBox="0 0 448 512">
                                             <path
                                                 d="M48 96V416c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16V170.5c0-4.2-1.7-8.3-4.7-11.3l33.9-33.9c12 12 18.7 28.3 18.7 45.3V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H309.5c17 0 33.3 6.7 45.3 18.7l74.5 74.5-33.9 33.9L320.8 84.7c-.3-.3-.5-.5-.8-.8V184c0 13.3-10.7 24-24 24H104c-13.3 0-24-10.7-24-24V80H64c-8.8 0-16 7.2-16 16zm80-16v80H272V80H128zm32 240a64 64 0 1 1 128 0 64 64 0 1 1 -128 0z" />
                                         </svg></button>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Content Row -->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="d-sm-flex align-items-center justify-content-end mb-4">
-                                <div class="button-wrappr" .js>
+                    <!--Create new Challenge-->
+
+
+                    <div class="step-progressbar-wrap mt5 wow fadeInLeft"
+                    data-wow-duration="1s" data-wow-delay=".5s">
+
+                        <div class="row">
+                            <div class="col-md-9 d-flex flex-column">
+                                <div class="wizard-inner-box">
+                                    <div class="inner-title">
+                                        <h1>You have not yet created any challenge, to create follow the step</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="button-wrappr">
                                     <button class="btn btn-primary" id="create-challenge">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -436,9 +448,94 @@
 
                                 </div>
                             </div>
+
+                        </div>
+
+                        <div class="row justify-content-center mt-4">
+                            <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                                <div class="card bg-light">
+                                    <div class="card-step-count bg-gradient-01"><span class="number">01</span><span
+                                            class="step-text">Step</span></div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Business Scenerio</h4>
+                                        <p class="card-text">Crafting a compelling business scenario is a
+                                            pivotal step in strategic planning and decision-making.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                                <div class="card bg-light">
+                                    <div class="card-step-count bg-gradient-02"><span class="number">02</span><span
+                                            class="step-text">Step</span></div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Idea Generation</h4>
+                                        <p class="card-text">Idea generation lies at the heart of fostering
+                                            innovation and addressing business challenges. To create a
+                                            compelling business challenge.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                                <div class="card bg-light">
+                                    <div class="card-step-count bg-gradient-03"><span class="number">03</span><span
+                                            class="step-text">Step</span></div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Parameter Settings</h4>
+                                        <p class="card-text">Strategic parameter setting is the cornerstone of
+                                            creating effective business challenges that drive innovation and
+                                            problem-solving.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4  justify-content-center">
+                            <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                                <div class="card bg-light">
+                                    <div class="card-step-count bg-gradient-04"><span class="number">04</span><span
+                                            class="step-text">Step</span></div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Score Setting</h4>
+                                        <p class="card-text">Setting effective scoring parameters is a critical
+                                            aspect of formulating a business challenge, ensuring clarity,
+                                            objectivity, and alignment with organizational goals. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="card bg-light">
+                                    <div class="card-step-count bg-gradient-05"><span class="number">05</span><span
+                                            class="step-text">Step</span></div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Impact Analysis</h4>
+                                        <p class="card-text">Conducting a comprehensive Impact Analysis,
+                                            encompassing both financial and non-financial dimensions, is
+                                            essential in formulating a meaningful business challenge.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="card bg-light">
+                                    <div class="card-step-count bg-gradient-06"><span class="number">06</span><span
+                                            class="step-text">Step</span></div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Review & Submit</h4>
+                                        <p class="card-text">Ensure the success of your business challenge by
+                                            meticulously reviewing all aspects, refining details, and aligning
+                                            with strategic objectives. Once thoroughly vetted, confidently
+                                            submit your business challenge, poised for innovative solutions and
+                                            transformative outcomes. </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
+
+
                     <div class="row" id="open-business-scenerio">
                         <div class="col-md-12">
                             <nav>
@@ -453,7 +550,8 @@
                                         aria-selected="true">Business Scenario</li>
                                     <li class="nav-link" id="data2" data-bs-toggle="tab"
                                         data-bs-target="#challenge-creation" type="button" role="tab"
-                                        aria-controls="challenge-creation" aria-selected="false">Challenge Creation</li>
+                                        aria-controls="challenge-creation" aria-selected="false">
+                                        Challenge Creation</li>
                                     <!-- <li class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
                                         data-bs-target="#nav-profile" type="button" role="tab"
                                         aria-controls="nav-profile" aria-selected="false">Idea Creation</li> -->
@@ -497,6 +595,7 @@
                                                         <div class="form-group">
                                                             <label for="exampleInputEmail1">Select Industries</label>
                                                             <select class="form-select" id="exampleFormControlSelect1">
+                                                                <option>Select Industries </option>
                                                                 <option>Banking </option>
                                                                 <option>E-Commerce & Retail</option>
                                                                 <option>Logistic</option>
@@ -510,6 +609,7 @@
                                                         <div class="form-group">
                                                             <label for="exampleInputEmail1">Functional Domain</label>
                                                             <select class="form-select" id="exampleFormControlSelect1">
+                                                                <option>Functional Domain </option>
                                                                 <option>Retail Banking</option>
                                                                 <option>Investment Banking</option>
                                                                 <option>Compliance and Regulatory Affairs</option>
@@ -523,6 +623,7 @@
                                                         <div class="form-group">
                                                             <label for="exampleInputEmail1">Select Process</label>
                                                             <select class="form-select" id="exampleFormControlSelect1">
+                                                                <option>Select Process</option>
                                                                 <option>Account Opening and Maintenance</option>
                                                                 <option>Deposits and Withdrawals</option>
                                                                 <option>Compliance and Regulatory Affairs</option>
@@ -532,28 +633,29 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <label for="exampleInputEmail1">Name of Business
-                                                                Scenario</label>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Enter the name of business scenario">
+                                                    <!-- <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Name of Business
+                                                        Scenario</label>
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Enter the name of business scenario">
 
-                                                        </div>
-                                                    </div>
+                                                </div>
+                                            </div>
 
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <label for="exampleInputEmail1">Background of Business
-                                                                Scenario </label>
-                                                            <textarea cols="50" rows="4"
-                                                                class="form-control height-100">Provide the background of Business Scenario</textarea>
-                                                        </div>
-                                                    </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Background of Business
+                                                        Scenario </label>
+                                                    <textarea cols="50" rows="4"
+                                                        class="form-control height-100">Provide the background of Business Scenario</textarea>
+                                                </div>
+                                            </div> -->
 
                                                     <div class="col-md-12">
                                                         <button class="btn btn-primary w-100"
-                                                            id="Create-Scenario">Create Scenario</button>
+                                                            id="Create-Scenario">Create
+                                                            Scenario</button>
 
                                                     </div>
 
@@ -577,7 +679,9 @@
                                                     <div class="card idea-box mb-3 border-left-primary"
                                                         data-target="table-data-1">
                                                         <div class="card-body">
-                                                            <h5 class="card-title">Business Scenario 1</h5>
+                                                            <h5 class="card-title"><a href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal"> Business Scenario
+                                                                    1</a></h5>
                                                             <p class="more">Be aware that a retired Juniper Customer
                                                                 Care phone number is being used fraudulently. Customers
                                                                 calling this number are offered a cash rebate in
@@ -591,6 +695,576 @@
                                                                 888-314-5822. Please also bookmark:</p>
 
                                                         </div>
+                                                        <div class="modal right fade" id="exampleModal" tabindex="-1"
+                                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel">
+                                                                            Business Scenario 1</h5>
+                                                                        <button type="button" class="btn-close"
+                                                                            data-bs-dismiss="modal"
+                                                                            aria-label="Close">X</button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="revlent-parmeter table-data"
+                                                                            id="table-data-1">
+                                                                            <div class="col-md-12">
+                                                                                <p class="table-title">Review The Key
+                                                                                    Factors Relevent to Business
+                                                                                    Scenario</p>
+                                                                                <table
+                                                                                    class="table table-bordered table-striped">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th scope="col" width="25%">
+                                                                                                Key Factors</th>
+                                                                                            <th scope="col" width="60%">
+                                                                                                Description</th>
+                                                                                            <th scope="col" width="15%">
+                                                                                                Action</th>
+
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>Key Factor 1</td>
+                                                                                            <td>The parameter details
+                                                                                                page allows defining
+                                                                                                new,
+                                                                                                editing,
+                                                                                                or deleting an existing
+                                                                                                parameter or its values.
+                                                                                                The
+                                                                                                Stock -> Stock settings
+                                                                                                -> Parameters section
+                                                                                                shows
+                                                                                                the
+                                                                                                list of all parameters.
+                                                                                            </td>
+                                                                                            <td class="editableTable">
+                                                                                                <div
+                                                                                                    class="d-flex align-items-center">
+                                                                                                    <div
+                                                                                                        class="flex-switch-check">
+                                                                                                        <div
+                                                                                                            class="form-check form-switch">
+                                                                                                            <input
+                                                                                                                class="form-check-input"
+                                                                                                                type="checkbox"
+                                                                                                                id="flexSwitchCheckChecked"
+                                                                                                                checked="">
+                                                                                                            <label
+                                                                                                                class="form-check-label"
+                                                                                                                for="flexSwitchCheckChecked"></label>
+                                                                                                        </div>
+                                                                                                    </div>
+
+
+
+                                                                                                    <div
+                                                                                                        class="dropdown ps-3">
+                                                                                                        <i class="fas fa-ellipsis-h dropdown-toggle"
+                                                                                                            id="dropdownMenuButton1"
+                                                                                                            data-bs-toggle="dropdown"
+                                                                                                            aria-expanded="true">
+                                                                                                        </i>
+                                                                                                        <ul class="dropdown-menu"
+                                                                                                            aria-labelledby="dropdownMenuButton1"
+                                                                                                            style="position: absolute; inset: auto 0px 0px auto; margin: 0px; transform: translate3d(-10.6667px, -17.3333px, 0px);"
+                                                                                                            data-popper-placement="top-end"
+                                                                                                            data-popper-reference-hidden="">
+
+                                                                                                            <li
+                                                                                                                class="save-btn">
+                                                                                                                <a class="dropdown-item"
+                                                                                                                    href="#"
+                                                                                                                    data-bs-toggle="modal"
+                                                                                                                    data-bs-target="#exampleModal5"><i
+                                                                                                                        class="far fa-save"></i>
+                                                                                                                    View
+                                                                                                                    Details</a>
+
+
+                                                                                                            </li>
+                                                                                                            <li
+                                                                                                                class="edit-btn">
+                                                                                                                <a class="dropdown-item"
+                                                                                                                    href="#"><i
+                                                                                                                        class="far fa-edit"></i>
+                                                                                                                    Edit</a>
+                                                                                                            </li>
+
+                                                                                                        </ul>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </td>
+
+
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>Key Factor 2</td>
+                                                                                            <td>The parameter details
+                                                                                                page allows defining
+                                                                                                new,
+                                                                                                editing,
+                                                                                                or deleting an existing
+                                                                                                parameter or its values.
+                                                                                                The
+                                                                                                Stock -> Stock settings
+                                                                                                -> Parameters section
+                                                                                                shows
+                                                                                                the
+                                                                                                list of all parameters.
+                                                                                            </td>
+                                                                                            <td class="editableTable">
+                                                                                                <div
+                                                                                                    class="d-flex align-items-center">
+                                                                                                    <div
+                                                                                                        class="flex-switch-check">
+                                                                                                        <div
+                                                                                                            class="form-check form-switch">
+                                                                                                            <input
+                                                                                                                class="form-check-input"
+                                                                                                                type="checkbox"
+                                                                                                                id="flexSwitchCheckChecked"
+                                                                                                                checked="">
+                                                                                                            <label
+                                                                                                                class="form-check-label"
+                                                                                                                for="flexSwitchCheckChecked"></label>
+                                                                                                        </div>
+                                                                                                    </div>
+
+
+
+                                                                                                    <div
+                                                                                                        class="dropdown ps-3">
+                                                                                                        <i class="fas fa-ellipsis-h dropdown-toggle"
+                                                                                                            id="dropdownMenuButton1"
+                                                                                                            data-bs-toggle="dropdown"
+                                                                                                            aria-expanded="true">
+                                                                                                        </i>
+                                                                                                        <ul class="dropdown-menu"
+                                                                                                            aria-labelledby="dropdownMenuButton1"
+                                                                                                            style="position: absolute; inset: auto 0px 0px auto; margin: 0px; transform: translate3d(-10.6667px, -17.3333px, 0px);"
+                                                                                                            data-popper-placement="top-end"
+                                                                                                            data-popper-reference-hidden="">
+
+                                                                                                            <li
+                                                                                                                class="save-btn">
+                                                                                                                <a class="dropdown-item"
+                                                                                                                    href="#"
+                                                                                                                    data-bs-toggle="modal"
+                                                                                                                    data-bs-target="#exampleModal2"><i
+                                                                                                                        class="far fa-save"></i>
+                                                                                                                    View
+                                                                                                                    Details</a>
+
+
+                                                                                                            </li>
+                                                                                                            <li
+                                                                                                                class="edit-btn">
+                                                                                                                <a class="dropdown-item"
+                                                                                                                    href="#"><i
+                                                                                                                        class="far fa-edit"></i>
+                                                                                                                    Edit</a>
+                                                                                                            </li>
+
+                                                                                                        </ul>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </td>
+
+
+
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>Key Factor 3</td>
+                                                                                            <td>The parameter details
+                                                                                                page allows defining
+                                                                                                new,
+                                                                                                editing,
+                                                                                                or deleting an existing
+                                                                                                parameter or its values.
+                                                                                                The
+                                                                                                Stock -> Stock settings
+                                                                                                -> Parameters section
+                                                                                                shows
+                                                                                                the
+                                                                                            <td class="editableTable">
+                                                                                                <div
+                                                                                                    class="d-flex align-items-center">
+                                                                                                    <div
+                                                                                                        class="flex-switch-check">
+                                                                                                        <div
+                                                                                                            class="form-check form-switch">
+                                                                                                            <input
+                                                                                                                class="form-check-input"
+                                                                                                                type="checkbox"
+                                                                                                                id="flexSwitchCheckChecked"
+                                                                                                                checked="">
+                                                                                                            <label
+                                                                                                                class="form-check-label"
+                                                                                                                for="flexSwitchCheckChecked"></label>
+                                                                                                        </div>
+                                                                                                    </div>
+
+
+
+                                                                                                    <div
+                                                                                                        class="dropdown ps-3">
+                                                                                                        <i class="fas fa-ellipsis-h dropdown-toggle"
+                                                                                                            id="dropdownMenuButton1"
+                                                                                                            data-bs-toggle="dropdown"
+                                                                                                            aria-expanded="true">
+                                                                                                        </i>
+                                                                                                        <ul class="dropdown-menu"
+                                                                                                            aria-labelledby="dropdownMenuButton1"
+                                                                                                            style="position: absolute; inset: auto 0px 0px auto; margin: 0px; transform: translate3d(-10.6667px, -17.3333px, 0px);"
+                                                                                                            data-popper-placement="top-end"
+                                                                                                            data-popper-reference-hidden="">
+
+                                                                                                            <li
+                                                                                                                class="save-btn">
+                                                                                                                <a class="dropdown-item"
+                                                                                                                    href="#"
+                                                                                                                    data-bs-toggle="modal"
+                                                                                                                    data-bs-target="#exampleModal2"><i
+                                                                                                                        class="far fa-save"></i>
+                                                                                                                    View
+                                                                                                                    Details</a>
+
+
+                                                                                                            </li>
+                                                                                                            <li
+                                                                                                                class="edit-btn">
+                                                                                                                <a class="dropdown-item"
+                                                                                                                    href="#"><i
+                                                                                                                        class="far fa-edit"></i>
+                                                                                                                    Edit</a>
+                                                                                                            </li>
+
+                                                                                                        </ul>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </td>
+
+
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>Key Factor 4</td>
+                                                                                            <td>The parameter details
+                                                                                                page allows defining
+                                                                                                new,
+                                                                                                editing,
+                                                                                                or deleting an existing
+                                                                                                parameter or its values.
+                                                                                                The
+                                                                                                Stock -> Stock settings
+                                                                                                -> Parameters section
+                                                                                                shows
+                                                                                                the
+                                                                                                list of all parameters.
+                                                                                            </td>
+                                                                                            <td class="editableTable">
+                                                                                                <div
+                                                                                                    class="d-flex align-items-center">
+                                                                                                    <div
+                                                                                                        class="flex-switch-check">
+                                                                                                        <div
+                                                                                                            class="form-check form-switch">
+                                                                                                            <input
+                                                                                                                class="form-check-input"
+                                                                                                                type="checkbox"
+                                                                                                                id="flexSwitchCheckChecked"
+                                                                                                                checked="">
+                                                                                                            <label
+                                                                                                                class="form-check-label"
+                                                                                                                for="flexSwitchCheckChecked"></label>
+                                                                                                        </div>
+                                                                                                    </div>
+
+
+
+                                                                                                    <div
+                                                                                                        class="dropdown ps-3">
+                                                                                                        <i class="fas fa-ellipsis-h dropdown-toggle"
+                                                                                                            id="dropdownMenuButton1"
+                                                                                                            data-bs-toggle="dropdown"
+                                                                                                            aria-expanded="true">
+                                                                                                        </i>
+                                                                                                        <ul class="dropdown-menu"
+                                                                                                            aria-labelledby="dropdownMenuButton1"
+                                                                                                            style="position: absolute; inset: auto 0px 0px auto; margin: 0px; transform: translate3d(-10.6667px, -17.3333px, 0px);"
+                                                                                                            data-popper-placement="top-end"
+                                                                                                            data-popper-reference-hidden="">
+
+                                                                                                            <li
+                                                                                                                class="save-btn">
+                                                                                                                <a class="dropdown-item"
+                                                                                                                    href="#"
+                                                                                                                    data-bs-toggle="modal"
+                                                                                                                    data-bs-target="#exampleModal2"><i
+                                                                                                                        class="far fa-save"></i>
+                                                                                                                    View
+                                                                                                                    Details</a>
+
+
+                                                                                                            </li>
+                                                                                                            <li
+                                                                                                                class="edit-btn">
+                                                                                                                <a class="dropdown-item"
+                                                                                                                    href="#"><i
+                                                                                                                        class="far fa-edit"></i>
+                                                                                                                    Edit</a>
+                                                                                                            </li>
+
+                                                                                                        </ul>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </td>
+
+
+
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>Key Factor 5</td>
+                                                                                            <td>The parameter details
+                                                                                                page allows defining
+                                                                                                new,
+                                                                                                editing,
+                                                                                                or deleting an existing
+                                                                                                parameter or its values.
+                                                                                                The
+                                                                                                Stock -> Stock settings
+                                                                                                -> Parameters section
+                                                                                                shows
+                                                                                                the
+                                                                                                list of all parameters.
+                                                                                            </td>
+                                                                                            <td class="editableTable">
+                                                                                                <div
+                                                                                                    class="d-flex align-items-center">
+                                                                                                    <div
+                                                                                                        class="flex-switch-check">
+                                                                                                        <div
+                                                                                                            class="form-check form-switch">
+                                                                                                            <input
+                                                                                                                class="form-check-input"
+                                                                                                                type="checkbox"
+                                                                                                                id="flexSwitchCheckChecked"
+                                                                                                                checked="">
+                                                                                                            <label
+                                                                                                                class="form-check-label"
+                                                                                                                for="flexSwitchCheckChecked"></label>
+                                                                                                        </div>
+                                                                                                    </div>
+
+
+
+                                                                                                    <div
+                                                                                                        class="dropdown ps-3">
+                                                                                                        <i class="fas fa-ellipsis-h dropdown-toggle"
+                                                                                                            id="dropdownMenuButton1"
+                                                                                                            data-bs-toggle="dropdown"
+                                                                                                            aria-expanded="true">
+                                                                                                        </i>
+                                                                                                        <ul class="dropdown-menu"
+                                                                                                            aria-labelledby="dropdownMenuButton1"
+                                                                                                            style="position: absolute; inset: auto 0px 0px auto; margin: 0px; transform: translate3d(-10.6667px, -17.3333px, 0px);"
+                                                                                                            data-popper-placement="top-end"
+                                                                                                            data-popper-reference-hidden="">
+
+                                                                                                            <li
+                                                                                                                class="save-btn">
+                                                                                                                <a class="dropdown-item"
+                                                                                                                    href="#"
+                                                                                                                    data-bs-toggle="modal"
+                                                                                                                    data-bs-target="#exampleModal2"><i
+                                                                                                                        class="far fa-save"></i>
+                                                                                                                    View
+                                                                                                                    Details</a>
+
+
+                                                                                                            </li>
+                                                                                                            <li
+                                                                                                                class="edit-btn">
+                                                                                                                <a class="dropdown-item"
+                                                                                                                    href="#"><i
+                                                                                                                        class="far fa-edit"></i>
+                                                                                                                    Edit</a>
+                                                                                                            </li>
+
+                                                                                                        </ul>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </td>
+
+
+
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>Key Factor 6</td>
+                                                                                            <td>The parameter details
+                                                                                                page allows defining
+                                                                                                new,
+                                                                                                editing,
+                                                                                                or deleting an existing
+                                                                                                parameter or its values.
+                                                                                                The
+                                                                                                Stock -> Stock settings
+                                                                                                -> Parameters section
+                                                                                                shows
+                                                                                                the
+                                                                                                list of all parameters.
+                                                                                            </td>
+                                                                                            <td class="editableTable">
+                                                                                                <div
+                                                                                                    class="d-flex align-items-center">
+                                                                                                    <div
+                                                                                                        class="flex-switch-check">
+                                                                                                        <div
+                                                                                                            class="form-check form-switch">
+                                                                                                            <input
+                                                                                                                class="form-check-input"
+                                                                                                                type="checkbox"
+                                                                                                                id="flexSwitchCheckChecked"
+                                                                                                                checked="">
+                                                                                                            <label
+                                                                                                                class="form-check-label"
+                                                                                                                for="flexSwitchCheckChecked"></label>
+                                                                                                        </div>
+                                                                                                    </div>
+
+
+
+                                                                                                    <div
+                                                                                                        class="dropdown ps-3">
+                                                                                                        <i class="fas fa-ellipsis-h dropdown-toggle"
+                                                                                                            id="dropdownMenuButton1"
+                                                                                                            data-bs-toggle="dropdown"
+                                                                                                            aria-expanded="true">
+                                                                                                        </i>
+                                                                                                        <ul class="dropdown-menu"
+                                                                                                            aria-labelledby="dropdownMenuButton1"
+                                                                                                            style="position: absolute; inset: auto 0px 0px auto; margin: 0px; transform: translate3d(-10.6667px, -17.3333px, 0px);"
+                                                                                                            data-popper-placement="top-end"
+                                                                                                            data-popper-reference-hidden="">
+
+                                                                                                            <li
+                                                                                                                class="save-btn">
+                                                                                                                <a class="dropdown-item"
+                                                                                                                    href="#"
+                                                                                                                    data-bs-toggle="modal"
+                                                                                                                    data-bs-target="#exampleModal5"><i
+                                                                                                                        class="far fa-save"></i>
+                                                                                                                    View
+                                                                                                                    Details</a>
+
+
+                                                                                                            </li>
+                                                                                                            <li
+                                                                                                                class="edit-btn">
+                                                                                                                <a class="dropdown-item"
+                                                                                                                    href="#"><i
+                                                                                                                        class="far fa-edit"></i>
+                                                                                                                    Edit</a>
+                                                                                                            </li>
+
+                                                                                                        </ul>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </td>
+
+
+
+                                                                                        </tr>
+
+
+
+
+
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                            <!--pagination-->
+                                                                            <div class="row">
+                                                                                <div class="col-md-10">
+
+                                                                                    <div
+                                                                                        class=" d-flex justify-content-lg-start">
+                                                                                        <div class="pagination-wrapper">
+                                                                                            <ul class="pagination">
+                                                                                                <li class="page-item"><a
+                                                                                                        class="page-link"
+                                                                                                        href="#">Previous</a>
+                                                                                                </li>
+                                                                                                <li
+                                                                                                    class="page-item active">
+                                                                                                    <a class="page-link"
+                                                                                                        href="#">1</a>
+                                                                                                </li>
+                                                                                                <li class="page-item"><a
+                                                                                                        class="page-link"
+                                                                                                        href="#">2</a>
+                                                                                                </li>
+                                                                                                <li class="page-item"><a
+                                                                                                        class="page-link"
+                                                                                                        href="#">3</a>
+                                                                                                </li>
+                                                                                                <li class="page-item"><a
+                                                                                                        class="page-link"
+                                                                                                        href="#">Next</a>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
+
+                                                                                        <div
+                                                                                            class="row-page-options ms-2">
+                                                                                            <div
+                                                                                                class="datatable-dropdown">
+                                                                                                <select
+                                                                                                    class="form-select">
+                                                                                                    <option value="5">5
+                                                                                                    </option>
+                                                                                                    <option value="10"
+                                                                                                        selected="">10
+                                                                                                    </option>
+                                                                                                    <option value="15">
+                                                                                                        10
+                                                                                                    </option>
+
+                                                                                                </select>
+
+                                                                                            </div>
+
+                                                                                        </div>
+
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-2">
+                                                                                    <div class="button-wrappr">
+                                                                                        <button class="btn btn-primary"
+                                                                                            id="next-tab"
+                                                                                            onclick="changeTab()">Next</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-bs-dismiss="modal">Close</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">Save
+                                                                            changes</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
                                                     </div>
 
                                                     <div class="card idea-box mb-3 border-left-primary"
@@ -659,641 +1333,6 @@
 
                                             </div>
 
-
-                                            <div class="revlent-parmeter table-data" id="table-data-1">
-                                                <div class="col-md-12">
-                                                    <p class="table-title">Review The Key Factors Relevent to Business
-                                                        Scenario</p>
-                                                    <table class="table table-bordered table-striped">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col" width="25%">Key Factors</th>
-                                                                <th scope="col" width="60%">Description</th>
-                                                                <th scope="col" width="15%">Action</th>
-
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Key Factor 1</td>
-                                                                <td>The parameter details page allows defining new,
-                                                                    editing,
-                                                                    or deleting an existing parameter or its values. The
-                                                                    Stock -> Stock settings -> Parameters section shows
-                                                                    the
-                                                                    list of all parameters.</td>
-                                                                <td class="editableTable">
-                                                                    <div class="d-flex align-items-center">
-                                                                        <div class="flex-switch-check">
-                                                                            <div class="form-check form-switch">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox"
-                                                                                    id="flexSwitchCheckChecked"
-                                                                                    checked="">
-                                                                                <label class="form-check-label"
-                                                                                    for="flexSwitchCheckChecked"></label>
-                                                                            </div>
-                                                                        </div>
-
-
-
-                                                                        <div class="dropdown ps-3">
-                                                                            <i class="fas fa-ellipsis-h dropdown-toggle"
-                                                                                id="dropdownMenuButton1"
-                                                                                data-bs-toggle="dropdown"
-                                                                                aria-expanded="true">
-                                                                            </i>
-                                                                            <ul class="dropdown-menu"
-                                                                                aria-labelledby="dropdownMenuButton1"
-                                                                                style="position: absolute; inset: auto 0px 0px auto; margin: 0px; transform: translate3d(-10.6667px, -17.3333px, 0px);"
-                                                                                data-popper-placement="top-end"
-                                                                                data-popper-reference-hidden="">
-
-                                                                                <li class="save-btn"><a
-                                                                                        class="dropdown-item" href="#"
-                                                                                        data-bs-toggle="modal"
-                                                                                        data-bs-target="#exampleModal2"><i
-                                                                                            class="far fa-save"></i>
-                                                                                        View Details</a>
-
-
-                                                                                </li>
-                                                                                <li class="edit-btn"><a
-                                                                                        class="dropdown-item"
-                                                                                        href="#"><i
-                                                                                            class="far fa-edit"></i>
-                                                                                        Edit</a>
-                                                                                </li>
-
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-
-
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Key Factor 2</td>
-                                                                <td>The parameter details page allows defining new,
-                                                                    editing,
-                                                                    or deleting an existing parameter or its values. The
-                                                                    Stock -> Stock settings -> Parameters section shows
-                                                                    the
-                                                                    list of all parameters.</td>
-                                                                <td class="editableTable">
-                                                                    <div class="d-flex align-items-center">
-                                                                        <div class="flex-switch-check">
-                                                                            <div class="form-check form-switch">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox"
-                                                                                    id="flexSwitchCheckChecked"
-                                                                                    checked="">
-                                                                                <label class="form-check-label"
-                                                                                    for="flexSwitchCheckChecked"></label>
-                                                                            </div>
-                                                                        </div>
-
-
-
-                                                                        <div class="dropdown ps-3">
-                                                                            <i class="fas fa-ellipsis-h dropdown-toggle"
-                                                                                id="dropdownMenuButton1"
-                                                                                data-bs-toggle="dropdown"
-                                                                                aria-expanded="true">
-                                                                            </i>
-                                                                            <ul class="dropdown-menu"
-                                                                                aria-labelledby="dropdownMenuButton1"
-                                                                                style="position: absolute; inset: auto 0px 0px auto; margin: 0px; transform: translate3d(-10.6667px, -17.3333px, 0px);"
-                                                                                data-popper-placement="top-end"
-                                                                                data-popper-reference-hidden="">
-
-                                                                                <li class="save-btn"><a
-                                                                                        class="dropdown-item" href="#"
-                                                                                        data-bs-toggle="modal"
-                                                                                        data-bs-target="#exampleModal2"><i
-                                                                                            class="far fa-save"></i>
-                                                                                        View Details</a>
-
-
-                                                                                </li>
-                                                                                <li class="edit-btn"><a
-                                                                                        class="dropdown-item"
-                                                                                        href="#"><i
-                                                                                            class="far fa-edit"></i>
-                                                                                        Edit</a>
-                                                                                </li>
-
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-
-
-
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Key Factor 3</td>
-                                                                <td>The parameter details page allows defining new,
-                                                                    editing,
-                                                                    or deleting an existing parameter or its values. The
-                                                                    Stock -> Stock settings -> Parameters section shows
-                                                                    the
-                                                                <td class="editableTable">
-                                                                    <div class="d-flex align-items-center">
-                                                                        <div class="flex-switch-check">
-                                                                            <div class="form-check form-switch">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox"
-                                                                                    id="flexSwitchCheckChecked"
-                                                                                    checked="">
-                                                                                <label class="form-check-label"
-                                                                                    for="flexSwitchCheckChecked"></label>
-                                                                            </div>
-                                                                        </div>
-
-
-
-                                                                        <div class="dropdown ps-3">
-                                                                            <i class="fas fa-ellipsis-h dropdown-toggle"
-                                                                                id="dropdownMenuButton1"
-                                                                                data-bs-toggle="dropdown"
-                                                                                aria-expanded="true">
-                                                                            </i>
-                                                                            <ul class="dropdown-menu"
-                                                                                aria-labelledby="dropdownMenuButton1"
-                                                                                style="position: absolute; inset: auto 0px 0px auto; margin: 0px; transform: translate3d(-10.6667px, -17.3333px, 0px);"
-                                                                                data-popper-placement="top-end"
-                                                                                data-popper-reference-hidden="">
-
-                                                                                <li class="save-btn"><a
-                                                                                        class="dropdown-item" href="#"
-                                                                                        data-bs-toggle="modal"
-                                                                                        data-bs-target="#exampleModal2"><i
-                                                                                            class="far fa-save"></i>
-                                                                                        View Details</a>
-
-
-                                                                                </li>
-                                                                                <li class="edit-btn"><a
-                                                                                        class="dropdown-item"
-                                                                                        href="#"><i
-                                                                                            class="far fa-edit"></i>
-                                                                                        Edit</a>
-                                                                                </li>
-
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-
-
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Key Factor 4</td>
-                                                                <td>The parameter details page allows defining new,
-                                                                    editing,
-                                                                    or deleting an existing parameter or its values. The
-                                                                    Stock -> Stock settings -> Parameters section shows
-                                                                    the
-                                                                    list of all parameters.</td>
-                                                                <td class="editableTable">
-                                                                    <div class="d-flex align-items-center">
-                                                                        <div class="flex-switch-check">
-                                                                            <div class="form-check form-switch">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox"
-                                                                                    id="flexSwitchCheckChecked"
-                                                                                    checked="">
-                                                                                <label class="form-check-label"
-                                                                                    for="flexSwitchCheckChecked"></label>
-                                                                            </div>
-                                                                        </div>
-
-
-
-                                                                        <div class="dropdown ps-3">
-                                                                            <i class="fas fa-ellipsis-h dropdown-toggle"
-                                                                                id="dropdownMenuButton1"
-                                                                                data-bs-toggle="dropdown"
-                                                                                aria-expanded="true">
-                                                                            </i>
-                                                                            <ul class="dropdown-menu"
-                                                                                aria-labelledby="dropdownMenuButton1"
-                                                                                style="position: absolute; inset: auto 0px 0px auto; margin: 0px; transform: translate3d(-10.6667px, -17.3333px, 0px);"
-                                                                                data-popper-placement="top-end"
-                                                                                data-popper-reference-hidden="">
-
-                                                                                <li class="save-btn"><a
-                                                                                        class="dropdown-item" href="#"
-                                                                                        data-bs-toggle="modal"
-                                                                                        data-bs-target="#exampleModal2"><i
-                                                                                            class="far fa-save"></i>
-                                                                                        View Details</a>
-
-
-                                                                                </li>
-                                                                                <li class="edit-btn"><a
-                                                                                        class="dropdown-item"
-                                                                                        href="#"><i
-                                                                                            class="far fa-edit"></i>
-                                                                                        Edit</a>
-                                                                                </li>
-
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-
-
-
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Key Factor 5</td>
-                                                                <td>The parameter details page allows defining new,
-                                                                    editing,
-                                                                    or deleting an existing parameter or its values. The
-                                                                    Stock -> Stock settings -> Parameters section shows
-                                                                    the
-                                                                    list of all parameters.</td>
-                                                                <td class="editableTable">
-                                                                    <div class="d-flex align-items-center">
-                                                                        <div class="flex-switch-check">
-                                                                            <div class="form-check form-switch">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox"
-                                                                                    id="flexSwitchCheckChecked"
-                                                                                    checked="">
-                                                                                <label class="form-check-label"
-                                                                                    for="flexSwitchCheckChecked"></label>
-                                                                            </div>
-                                                                        </div>
-
-
-
-                                                                        <div class="dropdown ps-3">
-                                                                            <i class="fas fa-ellipsis-h dropdown-toggle"
-                                                                                id="dropdownMenuButton1"
-                                                                                data-bs-toggle="dropdown"
-                                                                                aria-expanded="true">
-                                                                            </i>
-                                                                            <ul class="dropdown-menu"
-                                                                                aria-labelledby="dropdownMenuButton1"
-                                                                                style="position: absolute; inset: auto 0px 0px auto; margin: 0px; transform: translate3d(-10.6667px, -17.3333px, 0px);"
-                                                                                data-popper-placement="top-end"
-                                                                                data-popper-reference-hidden="">
-
-                                                                                <li class="save-btn"><a
-                                                                                        class="dropdown-item" href="#"
-                                                                                        data-bs-toggle="modal"
-                                                                                        data-bs-target="#exampleModal2"><i
-                                                                                            class="far fa-save"></i>
-                                                                                        View Details</a>
-
-
-                                                                                </li>
-                                                                                <li class="edit-btn"><a
-                                                                                        class="dropdown-item"
-                                                                                        href="#"><i
-                                                                                            class="far fa-edit"></i>
-                                                                                        Edit</a>
-                                                                                </li>
-
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-
-
-
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Key Factor 6</td>
-                                                                <td>The parameter details page allows defining new,
-                                                                    editing,
-                                                                    or deleting an existing parameter or its values. The
-                                                                    Stock -> Stock settings -> Parameters section shows
-                                                                    the
-                                                                    list of all parameters.</td>
-                                                                <td class="editableTable">
-                                                                    <div class="d-flex align-items-center">
-                                                                        <div class="flex-switch-check">
-                                                                            <div class="form-check form-switch">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox"
-                                                                                    id="flexSwitchCheckChecked"
-                                                                                    checked="">
-                                                                                <label class="form-check-label"
-                                                                                    for="flexSwitchCheckChecked"></label>
-                                                                            </div>
-                                                                        </div>
-
-
-
-                                                                        <div class="dropdown ps-3">
-                                                                            <i class="fas fa-ellipsis-h dropdown-toggle"
-                                                                                id="dropdownMenuButton1"
-                                                                                data-bs-toggle="dropdown"
-                                                                                aria-expanded="true">
-                                                                            </i>
-                                                                            <ul class="dropdown-menu"
-                                                                                aria-labelledby="dropdownMenuButton1"
-                                                                                style="position: absolute; inset: auto 0px 0px auto; margin: 0px; transform: translate3d(-10.6667px, -17.3333px, 0px);"
-                                                                                data-popper-placement="top-end"
-                                                                                data-popper-reference-hidden="">
-
-                                                                                <li class="save-btn"><a
-                                                                                        class="dropdown-item" href="#"
-                                                                                        data-bs-toggle="modal"
-                                                                                        data-bs-target="#exampleModal2"><i
-                                                                                            class="far fa-save"></i>
-                                                                                        View Details</a>
-
-
-                                                                                </li>
-                                                                                <li class="edit-btn"><a
-                                                                                        class="dropdown-item"
-                                                                                        href="#"><i
-                                                                                            class="far fa-edit"></i>
-                                                                                        Edit</a>
-                                                                                </li>
-
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-
-
-
-                                                            </tr>
-
-
-
-
-
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                                <!--pagination-->
-                                                <div class="row">
-                                                    <div class="col-md-10">
-
-                                                        <div class=" d-flex justify-content-lg-start">
-                                                            <div class="pagination-wrapper">
-                                                                <ul class="pagination">
-                                                                    <li class="page-item"><a class="page-link"
-                                                                            href="#">Previous</a>
-                                                                    </li>
-                                                                    <li class="page-item active"><a class="page-link"
-                                                                            href="#">1</a></li>
-                                                                    <li class="page-item"><a class="page-link"
-                                                                            href="#">2</a>
-                                                                    </li>
-                                                                    <li class="page-item"><a class="page-link"
-                                                                            href="#">3</a>
-                                                                    </li>
-                                                                    <li class="page-item"><a class="page-link"
-                                                                            href="#">Next</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-
-                                                            <div class="row-page-options ms-2">
-                                                                <div class="datatable-dropdown">
-                                                                    <select class="form-select">
-                                                                        <option value="5">5</option>
-                                                                        <option value="10" selected="">10</option>
-                                                                        <option value="15">10
-                                                                        </option>
-
-                                                                    </select>
-
-                                                                </div>
-
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-2">
-                                                        <div class="button-wrappr">
-                                                            <button class="btn btn-primary" id="next-tab"
-                                                                onclick="changeTab()">Next</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="revlent-parmeter
-                                             table-data mt-3" id="table-data-2">
-                                                <table class="table table-bordered table-striped">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col" width="25%">Parameters Name</th>
-                                                            <th scope="col" width="50%">Parameter Description</th>
-                                                            <th scope="col" width="25%">Required(Check Box)</th>
-
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Parameters 1</td>
-                                                            <td>The parameter details page allows defining new, editing,
-                                                                or deleting an existing parameter or its values. The
-                                                                Stock -> Stock settings -> Parameters section shows the
-                                                                list of all parameters.</td>
-                                                            <td>
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="" id="flexCheckDefault">
-                                                                    <label class="form-check-label"
-                                                                        for="flexCheckDefault">
-                                                                        Select
-                                                                    </label>
-                                                                </div>
-                                                            </td>
-
-
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Parameters 2</td>
-                                                            <td>The parameter details page allows defining new, editing,
-                                                                or deleting an existing parameter or its values. The
-                                                                Stock -> Stock settings -> Parameters section shows the
-                                                                list of all parameters.</td>
-                                                            <td>
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="" id="flexCheckDefault">
-                                                                    <label class="form-check-label"
-                                                                        for="flexCheckDefault">
-                                                                        Select
-                                                                    </label>
-                                                                </div>
-                                                            </td>
-
-
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Parameters 3</td>
-                                                            <td>The parameter details page allows defining new, editing,
-                                                                or deleting an existing parameter or its values. The
-                                                                Stock -> Stock settings -> Parameters section shows the
-                                                                list of all parameters.</td>
-                                                            <td>
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="" id="flexCheckDefault">
-                                                                    <label class="form-check-label"
-                                                                        for="flexCheckDefault">
-                                                                        Select
-                                                                    </label>
-                                                                </div>
-                                                            </td>
-
-
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Parameters 4</td>
-                                                            <td>The parameter details page allows defining new, editing,
-                                                                or deleting an existing parameter or its values. The
-                                                                Stock -> Stock settings -> Parameters section shows the
-                                                                list of all parameters.</td>
-                                                            <td>
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="" id="flexCheckDefault">
-                                                                    <label class="form-check-label"
-                                                                        for="flexCheckDefault">
-                                                                        Select
-                                                                    </label>
-                                                                </div>
-                                                            </td>
-
-
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Parameters 5</td>
-                                                            <td>The parameter details page allows defining new, editing,
-                                                                or deleting an existing parameter or its values. The
-                                                                Stock -> Stock settings -> Parameters section shows the
-                                                                list of all parameters.</td>
-                                                            <td>
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="" id="flexCheckDefault">
-                                                                    <label class="form-check-label"
-                                                                        for="flexCheckDefault">
-                                                                        Select
-                                                                    </label>
-                                                                </div>
-                                                            </td>
-
-
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Parameters 6</td>
-                                                            <td>The parameter details page allows defining new, editing,
-                                                                or deleting an existing parameter or its values. The
-                                                                Stock -> Stock settings -> Parameters section shows the
-                                                                list of all parameters.</td>
-                                                            <td>
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="" id="flexCheckDefault">
-                                                                    <label class="form-check-label"
-                                                                        for="flexCheckDefault">
-                                                                        Select
-                                                                    </label>
-                                                                </div>
-                                                            </td>
-
-
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Parameters 7</td>
-                                                            <td>The parameter details page allows defining new, editing,
-                                                                or deleting an existing parameter or its values. The
-                                                                Stock -> Stock settings -> Parameters section shows the
-                                                                list of all parameters.</td>
-                                                            <td>
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="" id="flexCheckDefault">
-                                                                    <label class="form-check-label"
-                                                                        for="flexCheckDefault">
-                                                                        Select
-                                                                    </label>
-                                                                </div>
-                                                            </td>
-
-
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Parameters 8</td>
-                                                            <td>The parameter details page allows defining new, editing,
-                                                                or deleting an existing parameter or its values. The
-                                                                Stock -> Stock settings -> Parameters section shows the
-                                                                list of all parameters.</td>
-                                                            <td>
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="" id="flexCheckDefault">
-                                                                    <label class="form-check-label"
-                                                                        for="flexCheckDefault">
-                                                                        Select
-                                                                    </label>
-                                                                </div>
-                                                            </td>
-
-
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Parameters 9</td>
-                                                            <td>The parameter details page allows defining new, editing,
-                                                                or deleting an existing parameter or its values. The
-                                                                Stock -> Stock settings -> Parameters section shows the
-                                                                list of all parameters.</td>
-                                                            <td>
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="" id="flexCheckDefault">
-                                                                    <label class="form-check-label"
-                                                                        for="flexCheckDefault">
-                                                                        Select
-                                                                    </label>
-                                                                </div>
-                                                            </td>
-
-
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Parameters 10</td>
-                                                            <td>The parameter details page allows defining new, editing,
-                                                                or deleting an existing parameter or its values. The
-                                                                Stock -> Stock settings -> Parameters section shows the
-                                                                list of all parameters.</td>
-                                                            <td>
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="" id="flexCheckDefault">
-                                                                    <label class="form-check-label"
-                                                                        for="flexCheckDefault">
-                                                                        Select
-                                                                    </label>
-                                                                </div>
-                                                            </td>
-
-
-                                                        </tr>
-
-                                                    </tbody>
-                                                </table>
-                                            </div>
-
-
-
                                         </div>
 
 
@@ -1354,11 +1393,12 @@
                                 <!--Define Challenges -->
                                 <div class="tab-pane fade" id="challenge-creation" role="tabpanel"
                                     aria-labelledby="nav-profile-tab">
-                                    
+
 
                                     <div class="row" id="challenges-box">
                                         <div class="col-md-12">
-                                            <p class="table-title">Review any one of the  Business Challenge and Submit</p>
+                                            <p class="table-title">Review any one of the Business Challenge and Submit
+                                            </p>
                                             <div class="generate-ideas-body" style="">
                                                 <div class="d-flex flex-row flex-wrap">
                                                     <div class="card idea-box mb-3 border-left-primary"
@@ -1817,7 +1857,8 @@
                                                                     href="#">Previous</a>
                                                             </li>
                                                             <li class="page-item active"><a class="page-link"
-                                                                    href="#">1</a></li>
+                                                                    href="#">1</a>
+                                                            </li>
                                                             <li class="page-item"><a class="page-link" href="#">2</a>
                                                             </li>
                                                             <li class="page-item"><a class="page-link" href="#">3</a>
@@ -2270,7 +2311,8 @@
                                                                         href="#">Previous</a>
                                                                 </li>
                                                                 <li class="page-item active"><a class="page-link"
-                                                                        href="#">1</a></li>
+                                                                        href="#">1</a>
+                                                                </li>
                                                                 <li class="page-item"><a class="page-link"
                                                                         href="#">2</a>
                                                                 </li>
@@ -2762,7 +2804,8 @@
                                                                                         </li>
                                                                                         <li class="page-item active"><a
                                                                                                 class="page-link"
-                                                                                                href="#">1</a></li>
+                                                                                                href="#">1</a>
+                                                                                        </li>
                                                                                         <li class="page-item"><a
                                                                                                 class="page-link"
                                                                                                 href="#">2</a>
@@ -2783,7 +2826,8 @@
                                                                                         <select class="form-select">
                                                                                             <option value="5">5</option>
                                                                                             <option value="10"
-                                                                                                selected="">10</option>
+                                                                                                selected="">10
+                                                                                            </option>
                                                                                             <option value="15">15
                                                                                             </option>
                                                                                             <option value="20">20
@@ -3189,7 +3233,8 @@
                                                                                         </li>
                                                                                         <li class="page-item active"><a
                                                                                                 class="page-link"
-                                                                                                href="#">1</a></li>
+                                                                                                href="#">1</a>
+                                                                                        </li>
                                                                                         <li class="page-item"><a
                                                                                                 class="page-link"
                                                                                                 href="#">2</a>
@@ -3210,7 +3255,8 @@
                                                                                         <select class="form-select">
                                                                                             <option value="5">5</option>
                                                                                             <option value="10"
-                                                                                                selected="">10</option>
+                                                                                                selected="">10
+                                                                                            </option>
                                                                                             <option value="15">15
                                                                                             </option>
                                                                                             <option value="20">20
@@ -3278,28 +3324,11 @@
     </a>
 
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for all pages-->
-    <script src="js/custome.js"></script>
-    <script src="js/global-search.js"></script>
-    <script src="js/kursor.js"></script>
-    <script src="js/range-slider.js"></script>
-    <!-- Page level plugins -->
-    <!-- <script src="vendor/chart.js/Chart.min.js"></script> -->
-
-    <!-- Page level custom scripts -->
-    <!-- <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script> -->
-
-
-    <div class="select-parameters-model modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="select-parameters-model modal left fade" id="exampleModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -3323,9 +3352,14 @@
     </div>
 
 
+    <!--demo2-->
+
+
+
+
     <!--Table Scenario Parameters Popup-->
 
-    <div class="modal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -3431,7 +3465,32 @@
         </div>
     </div>
 
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/custome.js"></script>
+    <script src="js/global-search.js"></script>
+    <script src="js/kursor.js"></script>
+    <script src="js/range-slider.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Page level plugins -->
+    <!-- <script src="vendor/chart.js/Chart.min.js"></script> -->
+
+    <!-- Page level custom scripts -->
+    <!-- <script src="js/demo/chart-area-demo.js"></script>
+     <script src="js/demo/chart-pie-demo.js"></script> -->
+
     <script type="text/JavaScript">
+
+       new WOW().init(); // wow animation js
 
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {

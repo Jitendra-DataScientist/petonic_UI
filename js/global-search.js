@@ -34,39 +34,46 @@ $(document).ready(function() {
 
 // 
 
+
+
 $('#Create-Scenario').click(function(){
     $('#business-scenerio').show();
     $(".title-befor-content-load").hide();
 });
 
 
+
+
+
+
 //
 
-$(".idea-box").click(function(){
-    alert('run');
-    // Hide all table data
-    //$(".table-data").hide();
+// $(".idea-box").click(function(){
+//     alert('run');
+//     // Hide all table data
+//     //$(".table-data").hide();
   
-    // Get the target ID from the data attribute
-    var targetId = $(this).data("target");
+//     // Get the target ID from the data attribute
+//     var targetId = $(this).data("target");
 
-   // $(".idea-box").hide();
-   $('#challenges-box').hide();
+//    // $(".idea-box").hide();
+//    $('#challenges-box').hide();
    
-    $(".title-befor-content-load").hide();
-    $("#business-scenerio").hide();
+//     $(".title-befor-content-load").hide();
+//     $("#business-scenerio").hide();
 
 
 
-    // Show the corresponding table data
-    $("#" + targetId).show();
-});
+//     // Show the corresponding table data
+//     $("#" + targetId).show();
+// });
 
 // on click create challenge open nav tab business sceniro
 
 $('#create-challenge').click(function(){
     $('#open-business-scenerio').show();
     $('#create-challenge').hide();
+    $('.step-progressbar-wrap').hide();
 });
 
 // on click next open challenge creation tab
@@ -102,9 +109,11 @@ $('#create-challenge').click(function(){
   function changeTab() {
 
     $('#challenges-box').show();
+    //$('.modal-backdrop').hide();
     // Get the currently active tab
+    //
     var activeTab = document.querySelector('.nav-tabs .nav-link.active');
-
+$('#exampleModal').hide();
     // Get the target tab id
     var targetTabId = activeTab.getAttribute('data-bs-target');
 
@@ -119,4 +128,6 @@ $('#create-challenge').click(function(){
     // Show the corresponding content for the next tab
     var nextTabContent = document.getElementById('challenge-creation'); // Change this to the desired content
     nextTabContent.classList.add('show', 'active');
+
+    $('.modal-backdrop').remove();
   }

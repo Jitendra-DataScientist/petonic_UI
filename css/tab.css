@@ -42,8 +42,8 @@
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     color: #6f7bd9;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 600;
 
 }
 
@@ -80,9 +80,9 @@
 
 .tab-content .form-group label {
     margin-bottom: 10px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
 }
 
 

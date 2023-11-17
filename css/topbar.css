@@ -1,5 +1,6 @@
 .topbar {
     height: 50px;
+    border-bottom: 1px solid #cbd0dd;
 }
 
 
@@ -292,7 +293,7 @@
     .topbar .dropdown .dropdown-menu {
         width: auto;
         left: unset;
-        border: 0px solid #555;
+        border: 1px solid #e3e6ed;
     }
 
     .topbar .dropdown-list {
